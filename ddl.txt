@@ -1,0 +1,31 @@
+=================================================================
+Nama : Gieorgie Kharismatik Kosasih
+Batch : RMT-031
+
+File ini berisikan syntax untuk membuat table di postgre
+=================================================================
+
+CREATE TABLE table_m3 (
+    "Invoice ID" VARCHAR,
+    "Branch" VARCHAR,
+    "City" VARCHAR,
+    "Customer type" VARCHAR,
+    "Gender" VARCHAR,
+    "Product line" VARCHAR,
+    "Unit price" FLOAT,
+    "Quantity" INT,
+    "Tax 5%" FLOAT,
+    "Total" FLOAT,
+    "Date" VARCHAR,
+    "Time" VARCHAR,
+    "Payment" VARCHAR,
+    "cogs" FLOAT,
+    "gross margin percentage" FLOAT,
+    "gross income" FLOAT,
+    "Rating" FLOAT
+);
+
+=============================================================================
+Sintaks DML
+\COPY table_m3 FROM 'C:\Users\grati\Desktop\project-m3\P2M3_gieorgie_data_raw.csv' WITH (FORMAT csv, HEADER true ,DELIMITER ',');
+=============================================================================
